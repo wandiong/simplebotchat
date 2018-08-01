@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 <script src="responsivevoice.js"></script>
+<script src="api/responseDatabase.js"></script>
 <div id="chat">
 
 </div>
@@ -40,14 +41,8 @@
       var text = "";
       var div = "";
       div += "<div class='container darker' align='right'>";
-      switch (messageLarge) {
-        case "Hi":
-          text = "Sup man";
-          break;
-        default :
-          text = "I dont know what are you talking about :( ";
-          break;
-      }
+      
+      text = getMessage(message);
 
       div += "<p>" + text + "</p>";
       div += "<span class='time-left'>" + hour + ":" + minutes + "</span>";
