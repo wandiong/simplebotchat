@@ -17,22 +17,39 @@ working under angularJS / NodeJS/ JQuery
     how to edit him?
     go to src/api/responseDatabase.JS, you will see some code like this
     switch (temp.toUpperCase()) {
+        
+
         case "HI":
+
+
             return "Sup man";
+
+
             break;
+
+            
     }
 
     you can add any text you want from there, lets say. 
     
     Case "BOI" :
+
+
         "its a God of War 4 reference dude , seriously";
+
+
         break;
     
+
     remember, the required case must be entirely uppercase
 
     you can even add a swears!, but i warn you. dont use swears unless everyone near you are okay with it
+
+
 #side note
 - you can ignore webpack : failed to compile. we dont need it at the moment. but im working on fixing that part now
 - also, suggestion are very open. feel free to talk in issues
+
+
 #planed to do
 - convert voice become text
