@@ -13,12 +13,14 @@ working under angularJS / NodeJS/ JQuery
 #usage
 - say Hi on message text box and bot will reply you "Sup Man"
 - say Bye and bot wont ever miss you, he's so meanie :(
+    
     but doesnt matter. we can edit him anyway
-    how to edit him?
-    go to src/api/responseDatabase.JS, you will see some code like this
-    switch (temp.toUpperCase()) {
-        
 
+    how to edit him?
+    
+    go to src/api/responseDatabase.JS, you will see some code like this
+    
+    switch (temp.toUpperCase()) {
         case "HI":
 
 
