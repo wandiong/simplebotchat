@@ -1,0 +1,60 @@
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="responsivevoice.js"></script>
+<div id="chat">
+
+</div>
+<div>
+  <input type="text" class="form-control" id="message" placeholder="input your message here">
+  <a href="#" class="btn btn-success" id="send"> send</a>
+</div>
+<script>
+  $(document).ready(function () {
+    $("#send").click(function () {
+      var date = new Date;
+      var hour = date.getHours();
+      var minutes = date.getMinutes();
+      var text = $("#message").val();
+      $("#message").val("");
+      if (text.replace(" ", "") != "") {
+        var div = "";
+        div += "<div class='container'>";
+        div += "<p>" + text + "</p>";
+        div += "<span class='time-right'>" + hour + ":" + minutes + "</span>";
+        div += "</div>";
+        $("#chat").append(div);
+        setTimeout(function () {
+          botReply(text);
+        }, 3000);
+      } else {
+        alert("please say something");
+      }
+    })
+
+    function botReply(message) {
+      var messageLarge = message;
+      var date = new Date;
+      var hour = date.getHours();
+      var minutes = date.getMinutes();
+      var text = "";
+      var div = "";
+      div += "<div class='container darker' align='right'>";
+      switch (messageLarge) {
+        case "Hi":
+          text = "Sup man";
+          break;
+        default :
+          text = "I dont know what are you talking about :( ";
+          break;
+      }
+
+      div += "<p>" + text + "</p>";
+      div += "<span class='time-left'>" + hour + ":" + minutes + "</span>";
+      div += "</div>";
+      $("#chat").append(div);
+      responsiveVoice.speak(text, "UK English Male");
+    }
+  })
+
+</script>
