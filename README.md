@@ -1,31 +1,38 @@
 # Chatbot
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+Chat bot is a simple chat response app which user will gets a reply from bot
+working under angularJS / NodeJS/ JQuery
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#how to use
+- clone the project
+- go to the project folder
+- run npm install
+- run ng serve
+- open locahost:4200
 
-## Code scaffolding
+#usage
+- say Hi on message text box and bot will reply you "Sup Man"
+- say Bye and bot wont ever miss you, he's so meanie :(
+    but doesnt matter. we can edit him anyway
+    how to edit him?
+    go to src/api/responseDatabase.JS, you will see some code like this
+    switch (temp.toUpperCase()) {
+        case "HI":
+            return "Sup man";
+            break;
+    }
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+    you can add any text you want from there, lets say. 
+    
+    Case "BOI" :
+        "its a God of War 4 reference dude , seriously";
+        break;
+    
+    remember, the required case must be entirely uppercase
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    you can even add a swears!, but i warn you. dont use swears unless everyone near you are okay with it
+#side note
+- you can ignore webpack : failed to compile. we dont need it at the moment. but im working on fixing that part now
+- also, suggestion are very open. feel free to talk in issues
+#planed to do
+- convert voice become text
