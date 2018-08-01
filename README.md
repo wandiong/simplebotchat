@@ -26,17 +26,13 @@ working under angularJS / NodeJS/ JQuery
 
 
             break;
-
-            
     }
 
     you can add any text you want from there, lets say. 
     
     Case "BOI" :
 
-
         "its a God of War 4 reference dude , seriously";
-
 
         break;
     
