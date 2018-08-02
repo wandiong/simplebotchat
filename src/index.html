@@ -9,12 +9,25 @@
 <div>
   <input type="text" class="form-control" id="message" placeholder="input your message here">
   <a href="#" class="btn btn-success" id="send"> send</a>
+  <a href="#" class="btn btn-success" id="voice"> use voice</a>
 </div>
 <script>
   $(document).ready(function () {
-    $("#message").keypress(function(e){
-      if(e.keyCode == 13)
-      {
+    $("#voice").click(function(){
+      var recognition = new(window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition ||
+        window.msSpeechRecognition)();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 5;
+      recognition.start();
+
+      recognition.onresult = function (event) {
+        $("#message").val(event.results[0][0].transcript)
+        $("#send").click();
+      };
+    })
+    $("#message").keypress(function (e) {
+      if (e.keyCode == 13) {
         $("#send").click();
       }
     })
@@ -47,7 +60,7 @@
       var text = "";
       var div = "";
       div += "<div class='container darker' align='right'>";
-      
+
       text = getMessage(message);
 
       div += "<p>" + text + "</p>";

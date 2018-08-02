@@ -11,8 +11,8 @@ working under angularJS / NodeJS/ JQuery
 - open locahost:4200
 
 #usage
-- say Hi on message text box and bot will reply you "Sup Man"
-- say Bye and bot wont ever miss you, he's so meanie :(
+- say Hi on message text box then hit send or either hit "use voice" and say "hi" and bot will reply you "Sup Man"
+- say Bye then hit send or hit "use voice" and say bye then bot wont ever miss you, he's so meanie :(
     
     but doesnt matter. we can edit him anyway
 
