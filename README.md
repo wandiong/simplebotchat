@@ -8,7 +8,7 @@ working under angularJS / NodeJS/ JQuery
 - go to the project folder
 - run npm install
 - run ng serve
-- open locahost:4200
+- open locahost:4200 in your browser (chrome recomended)
 
 #usage
 - say Hi on message text box then hit send or either hit "use voice" and say "hi" and bot will reply you "Sup Man"
@@ -46,7 +46,7 @@ working under angularJS / NodeJS/ JQuery
 
 
 #side note
-- you can ignore webpack : failed to compile. we dont need it at the moment. but im working on fixing that part now
+- you can ignore webpack : failed to compile. we dont need it at the moment. but im working on fixing that part at the moment
 - also, suggestion are very open. feel free to talk in issues
 - besides of those stuff above and below, i'd like to apologize for everything that im wrongly done. and im wiling to improve and change for better
 
