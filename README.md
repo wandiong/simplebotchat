@@ -48,7 +48,7 @@ working under angularJS / NodeJS/ JQuery
 #side note
 - you can ignore webpack : failed to compile. we dont need it at the moment. but im working on fixing that part now
 - also, suggestion are very open. feel free to talk in issues
-
+- besides of those stuff above and below, i'd like to apologize for everything that im wrongly done. and im wiling to improve and change for better
 
 #planed to do
 - add voice to text compability on opera browser
