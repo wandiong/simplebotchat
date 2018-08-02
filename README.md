@@ -20,22 +20,23 @@ working under angularJS / NodeJS/ JQuery
     
     go to src/api/responseDatabase.JS, you will see some code like this
     
-    switch (temp.toUpperCase()) {
-        case "HI":
+      switch (temp.toUpperCase()) {
+          
+          case "HI":
 
 
             return "Sup man";
 
 
             break;
-    }
+      }
 
     you can add any text you want from there, lets say. 
     
-    Case "BOI" :
+      Case "BOI" :
 
         "its a God of War 4 reference dude , seriously";
-
+  
         break;
     
 
@@ -50,4 +51,4 @@ working under angularJS / NodeJS/ JQuery
 
 
 #planed to do
-- convert voice become text
+- add voice to text compability on opera browser
